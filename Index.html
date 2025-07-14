@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Malla Interactiva AP UChile</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Malla Interactiva Administración Pública</h1>
+  <p>Marca tus ramos aprobados y guarda tu progreso</p>
+</header>
+
+<div id="loadingMessage" class="hidden">Cargando...</div>
+
+<section class="auth-container">
+  <div class="auth-box">
+    <h3>Crear cuenta</h3>
+    <input type="email" id="reg-email" placeholder="Correo electrónico" />
+    <input type="password" id="reg-password" placeholder="Contraseña" />
+    <button id="registerBtn">Registrarse</button>
+  </div>
+
+  <div class="auth-box">
+    <h3>Iniciar sesión</h3>
+    <input type="email" id="login-email" placeholder="Correo electrónico" />
+    <input type="password" id="login-password" placeholder="Contraseña" />
+    <button id="loginBtn">Entrar</button>
+  </div>
+</section>
+
+<button id="logoutBtn" class="hidden">Cerrar sesión</button>
+
+<main id="malla"></main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
